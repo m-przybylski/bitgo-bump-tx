@@ -22,12 +22,15 @@ async function run() {
   const coin = isTest ? 'tbtc' : 'btc'
   const wallet = await bitgo.coin(coin).wallets().get({ id: walletId })
   try {
-    const result = await wallet.accelerateTransaction({ cpfpTxIds: [txId], cpfpFeeRate: 200, maxFee: 6000 })
+    const result = await wallet.accelerateTransaction({ 
+      cpfpTxIds: [txId], 
+      cpfpFeeRate: 200, 
+      maxFee: 6000 
+    })
     console.log({result})
   } catch (ex) {
     console.error({ex})
   }
 }
-
 
 run()
