@@ -1,0 +1,18 @@
+{
+  "name": "bitgo-bump-tx",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "bitgo": "^13.1.0",
+    "dotenv": "^10.0.0",
+    "minimist": "^1.2.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js --tx='62431b1eef90c4b2ca5583b51edeb1d781c9509c44a38da4bc43a16f385ad1d3'"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
